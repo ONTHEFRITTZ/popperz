@@ -1,0 +1,2 @@
+. filter=lfs diff=lfs merge=lfs -text
+Popperz_project/ filter=lfs diff=lfs merge=lfs -text
