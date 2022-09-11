@@ -26,7 +26,15 @@ public class Player : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
-        //movement controls
+       
+    }  
+
+//Fixed update is called once every physics update
+
+private void FixedUpdate()
+    {
+
+ //movement controls
         if (Input.GetKeyDown(KeyCode.Space))
 			{
                 jumpKeyWasPressed = true;
@@ -41,15 +49,8 @@ public class Player : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.a))
 			{
                 leftWasPressed = true;
-
+            }
     
-    }  
-
-//Fixed update is called once every physics update
-
-private void FixedUpdate()
-    {
-
     
         if (jumpKeyWasPressed)
 			{
